@@ -1,0 +1,8 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Player API",
+    "description": "This is a struct representing a player",
+    "version": "1.0.0"
+  }
+}

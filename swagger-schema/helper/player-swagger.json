@@ -1,10 +1,5 @@
 {
   "swagger": "2.0",
-  "info": {
-    "description": "This is a struct representing a player",
-    "title": "Player API",
-    "version": "1.0.0"
-  },
   "paths": {},
   "definitions": {
     "Player": {
