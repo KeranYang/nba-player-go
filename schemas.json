@@ -1,0 +1,60 @@
+{
+  "Player": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Player",
+    "definitions": {
+      "Player": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "team": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "number": {
+            "type": "integer"
+          },
+          "school": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "$ref": "#/definitions/School"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object"
+      },
+      "School": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object"
+      }
+    }
+  },
+  "School": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/School",
+    "definitions": {
+      "School": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object"
+      }
+    }
+  }
+}
