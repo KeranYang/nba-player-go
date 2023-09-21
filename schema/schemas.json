@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$ref": "#/$defs/Player",
+  "$defs": {
+    "Player": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "team": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "school": {
+          "$ref": "#/$defs/School"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object"
+    },
+    "School": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object"
+    }
+  }
+}
