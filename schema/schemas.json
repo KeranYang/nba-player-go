@@ -21,7 +21,14 @@
         }
       },
       "additionalProperties": false,
-      "type": "object"
+      "type": "object",
+      "required": [
+        "name",
+        "team",
+        "position",
+        "number",
+        "school"
+      ]
     },
     "School": {
       "properties": {
@@ -33,7 +40,11 @@
         }
       },
       "additionalProperties": false,
-      "type": "object"
+      "type": "object",
+      "required": [
+        "name",
+        "city"
+      ]
     }
   }
 }
